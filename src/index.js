@@ -17,6 +17,10 @@ function generateAffirmation(event) {
   let prompt = `User instructions: Generate a short affirmation about ${instructionsInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let affirmationElement = document.querySelector("#affirmation");
+  affirmationElement.classList.remove("hidden");
+  affirmationElement.innerHTML = `<div class="generating">⌛Generating an affirmation about ${instructionsInput.value}`;
+
   axios.get(apiURL).then(displayAffirmation);
 }
 

@@ -16,24 +16,25 @@
             <h1>Daily affirmations</h1>
         </header>
         <main>
-            <form id="affirmation-generator-form">
-                <input type="text" placeholder="Enter the topic of your affirmation" autofocus required
-                    autocomplete="off" class="instructions" id="user-instructions" />
-                <input type="submit" class="submit-button" />
-
-            </form>
-            <div class="affirmation" id="affirmation">
-
+            <div class="form-container">
+                <form id="affirmation-generator-form">
+                    <input type="text" placeholder="Enter the topic of your affirmation" autofocus required
+                        autocomplete="off" class="instructions" id="user-instructions" />
+                    <input type="submit" class="submit-button" />
+                </form>
+                <div class="hint">e.g. love, money, strength</div>
             </div>
-        </main>
+            <div class="affirmation hidden" id="affirmation"></div>
+    </div>
+    </main>
 
-        <footer>This project was coded by <a href="https://github.com/antjekunert4-png" target="_blank"> Antje
-                Kunert</a>
-            and is <a href="https://github.com/antjekunert4-png/affirmation-generator" target="_blank">open-soourced
-                on
-                GitHub</a> and is <a href="https://antjes-affirmation-generator.netlify.app/" target="_blank">hosted on
-                Netlify.</a>
-        </footer>
+    <footer>This project was coded by <a href="https://github.com/antjekunert4-png" target="_blank"> Antje
+            Kunert</a>
+        and is <a href="https://github.com/antjekunert4-png/affirmation-generator" target="_blank">open-soourced
+            on
+            GitHub</a> and is <a href="https://antjes-affirmation-generator.netlify.app/" target="_blank">hosted on
+            Netlify.</a>
+    </footer>
     </div>
     <script src="src/index.js"></script>
 </body>
