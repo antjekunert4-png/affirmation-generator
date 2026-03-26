@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI affirmations generator</title>
 </head>
@@ -14,16 +15,14 @@
             <h1>Daily affirmations</h1>
         </header>
         <main>
-            <form>
+            <form id="affirmation-generator-form">
                 <input type="text" placeholder="Enter the topic of your affirmation" autofocus required
                     autocomplete="off" class="instructions" />
                 <input type="submit" class="submit-button" />
 
             </form>
-            <div class="affirmation">
-                sfgfgfghf
-                <br />
-                xzcncvcv
+            <div class="affirmation" id="affirmation">
+
             </div>
         </main>
 
