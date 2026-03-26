@@ -1,6 +1,4 @@
 function displayAffirmation(event) {
-  event.preventDefault();
-
   new Typewriter("#affirmation", {
     strings: response.data.answer,
     autoStart: true,
