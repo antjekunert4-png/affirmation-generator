@@ -13,7 +13,7 @@ function generateAffirmation(event) {
   let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "a75f8bb18344f8at30c2o163eff475bb";
   let context =
-    "You are an affirmation expert. Your mission is to write a 2 line affirmation and separate each line with a <br />. Make sure to follow the user instructions below. Sign the affirmation with 'SheCodes AI' in a <strong> element";
+    "You are an affirmation expert. Your mission is to write a 2 line affirmation and separate each line with a <br />. Make sure to follow the user instructions below. Sign the affirmation with 'SheCodes AI' in a <strong> element and separate it with a <br />";
   let prompt = `User instructions: Generate a short affirmation about ${instructionsInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
